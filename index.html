@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb | Holiday rentals, cabins, beach houses & more</title>
+    <link rel="shortcut icon" href="Assetes/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="left-logo">
+                <img class="navlogo" src="Assetes/nav-logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <div class="top-menu">
+                    <a class="link-stays" href="#">
+                        <p><b> Stays </b></p>
+                    </a>
+                    <a class="link-experiences" href="#">
+                        <p>Experiences</p>
+                    </a>
+                    <a class="link-online-experiences" href="#">
+                        <p>Online Experiences</p>
+                    </a>
+                </div>
+            </div>
+            <div class="right-navbar">
+                <div class="nav-btn">
+                    <button> <b>Airbnb your home </b></button>
+                </div>
+                <div class="internet-icon">
+                    <!-- <img src="Assetes/" alt=""> -->
+                    <div class="i-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-globe" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="right-login">
+                    <!-- Menu Icon -->
+                    <div class="menu-icon">
+                        <div class="m-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!--User Icon  -->
+                    <div class="user-icon">
+                        <div class="u-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="products">
+            <div class="search-sticky">
+                <div class="search-destination">
+                    <p>Where</p>
+                    <div class="input-search-details">
+                        <input type="text" placeholder="Search Destination">
+                    </div>
+                </div>
+                <div class="search-check-in">
+                    <p>Check in</p>
+                    <input type="date" name="check-in-date" id="check-in-date">
+                </div>
+                <div class="search-check-out">
+                    <p>Check out</p>
+                    <input type="date" name="check-out-date" id="check-out-date">
+                </div>
+                <div class="search-add-guest">
+                    <div class="add-data-left">
+                        <p>Who</p>
+                        <select name="add-guest" id="add-guest">
+                            <option value="adult">Adult</option>
+                            <option value="children">Children</option>
+                            <option value="infants">Infants</option>
+                            <option value="pets">Pets</option>
+
+                        </select>
+                    </div>
+                    <div class="right-search-icon">
+                        <div class="sticky-right-search-icon">
+                            <div class="nav-right-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </div>
+                            <!-- <p> Search</p> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----------------Icon ----------->
+
+            <div class="icons">
+                <div class="left-arr">
+                    <div class="left-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <!-- <div class="left-arrow"> </div> -->
+                        <img src="Assetes/i1.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i2.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i3.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i4.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i5.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i6.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i7.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i8.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i9.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i10.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="icon">
+                    <div class="icons-align">
+                        <img src="Assetes/i11.jpeg" class="icon1" alt="icon">
+                    </div>
+                    <p>Hotel</p>
+                </div>
+                <div class="right-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="room-card">
+            <div class="rooms">
+                <div class="room-img">
+                    <div class="img">
+                        <img src="https://source.unsplash.com/1000x800?hotel" alt="">
+                    </div>
+                    <div class="share-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="room-desc">
+                    <p class="card-heading">Best room in Lucknow</p>
+                    <p class="desc1">Lorem ipsum dolor sit amet dolor sit ame.</p>
+                    <p class="rate">$ 0 Per Guest</p>
+                </div>
+            </div>
+
+
+            <div class="rooms">
+                <div class="room-img">
+                    <div class="img">
+                        <img src="https://source.unsplash.com/1000x800?room" alt="">
+                    </div>
+                    <div class="share-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="room-desc">
+                    <p class="card-heading">Best room in Lucknow</p>
+                    <p class="desc1">Lorem ipsum dolor sit amet dolor sit ame.</p>
+                    <p class="rate">$ 0 Per Guest</p>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="room-img">
+                    <div class="img">
+                        <img src="https://source.unsplash.com/1000x800?house" alt="">
+                    </div>
+                    <div class="share-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="room-desc">
+                    <p class="card-heading">Best room in Lucknow</p>
+                    <p class="desc1">Lorem ipsum dolor sit amet dolor sit ame.</p>
+                    <p class="rate">$ 0 Per Guest</p>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="room-img">
+                    <div class="img">
+                        <img src="https://source.unsplash.com/1000x800?mountains" alt="">
+                    </div>
+                    <div class="share-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="room-desc">
+                    <p class="card-heading">Best room in Lucknow</p>
+                    <p class="desc1">Lorem ipsum dolor sit amet dolor sit ame.</p>
+                    <p class="rate">$ 0 Per Guest</p>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="room-img">
+                    <div class="img">
+                        <img src="https://source.unsplash.com/1000x800?beach" alt="">
+                    </div>
+                    <div class="share-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="room-desc">
+                    <p class="card-heading">Best room in Lucknow</p>
+                    <p class="desc1">Lorem ipsum dolor sit amet dolor sit ame.</p>
+                    <p class="rate">$ 0 Per Guest</p>
+                </div>
+            </div>
+
+            <div class="rooms">
+                <div class="room-img">
+                    <div class="img">
+                        <img src="https://source.unsplash.com/1000x800?villa" alt="">
+                    </div>
+                    <div class="share-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="room-desc">
+                    <p class="card-heading">Best room in Lucknow</p>
+                    <p class="desc1">Lorem ipsum dolor sit amet dolor sit ame.</p>
+                    <p class="rate">$ 0 Per Guest</p>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="room-img">
+                    <div class="img">
+                        <img src="https://source.unsplash.com/1000x800?room+interior" alt="">
+                    </div>
+                    <div class="share-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="room-desc">
+                    <p class="card-heading">Best room in Lucknow</p>
+                    <p class="desc1">Lorem ipsum dolor sit amet dolor sit ame.</p>
+                    <p class="rate">$ 0 Per Guest</p>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="room-img">
+                    <div class="img">
+                        <img src="https://source.unsplash.com/1000x800?forest" alt="">
+                    </div>
+                    <div class="share-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="room-desc">
+                    <p class="card-heading">Best room in Lucknow</p>
+                    <p class="desc1">Lorem ipsum dolor sit amet dolor sit ame.</p>
+                    <p class="rate">$ 0 Per Guest</p>
+                </div>
+            </div>
+            <div class="rooms">
+                <div class="room-img">
+                    <div class="img">
+                        <img src="https://source.unsplash.com/1000x800?river" alt="">
+                    </div>
+                    <div class="share-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-box-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1z" />
+                            <path fill-rule="evenodd"
+                                d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708z" />
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="room-desc">
+                    <p class="card-heading">Best room in Lucknow</p>
+                    <p class="desc1">Lorem ipsum dolor sit amet dolor sit ame.</p>
+                    <p class="rate">$ 0 Per Guest</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <section class="explore">
+            <div>
+                <p>Continue exploring amazing pools</p>
+                <button class="cta-btn">Show More</button>
+            </div>
+
+        </section>
+        <footer>
+            <div class="footer1">
+                <div class="category">
+                    <h3>Inspiration for future getaways</h3>
+                    <div class="category-details">
+                        <a href="#">Home</a>
+                        <a href="#">Servie</a>
+                        <a href="#">Lifestyle</a>
+                        <a href="#">Finance</a>
+                        <a href="#">Family</a>
+                    </div>
+                    <hr>
+
+                    <div class="f1-data">
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="f1-data">
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+                        <div class="f1-coll">
+                            <a href="#">
+                                <p class="f1-subtitle">Canmore</p>
+                                <p class="f1-sub-desc">Holiday rentals</p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer2">
+                <div class="f2-desc">
+                    <div class="f2-data">
+                        <b>
+                            <p>Support</p>
+                        </b>
+                        <ul>
+                            <li>Car</li>
+                            <li>Home</li>
+                            <li>Part</li>
+                            <li>Domain</li>
+                            <li>Hositng</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                    <div class="f2-data">
+                        <b>
+                            <p>Hosting</p>
+                        </b>
+                        <ul>
+                            <li>Car</li>
+                            <li>Home</li>
+                            <li>Part</li>
+                            <li>Domain</li>
+                            <li>Hositng</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                    <div class="f2-data">
+                        <b>
+                            <p>Airbnb</p>
+                        </b>
+                        <ul>
+                            <li>Car</li>
+                            <li>Home</li>
+                            <li>Part</li>
+                            <li>Domain</li>
+                            <li>Hositng</li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer3">
+                <div class="f3-data">
+                    Terms and Condition Applyies
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
